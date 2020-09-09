@@ -1,0 +1,13 @@
+
+<div class="third">
+<ul>
+  <li *ngFor="let todo of asd; let i = index">
+    <span [class.done]="todo.completed">
+      <input type="checkbox" [checked]="todo.completed" (change)="onChange(todo.id)">
+    <strong>{{i + 1}}</strong>
+    {{ todo.title}}
+    </span>
+    <button class="delete">&times;</button>
+  </li>
+</ul>
+</div>
